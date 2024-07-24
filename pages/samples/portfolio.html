@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from demo.bootstrapdash.com/caroline/template/demo_1/pages/samples/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jul 2024 03:20:22 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Caroline Dash</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../../assets/css/demo_1/style.css" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png" />
+  </head>
+  <body>
+    <script src="../../../assets/js/preloader.js"></script>
+    <div class="body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+      <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+        <div class="mdc-drawer__header">
+          <a href="../../index-2.html" class="brand-logo">
+            <img src="https://demo.bootstrapdash.com/caroline/template/assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="mdc-drawer__content">
+          <div class="mdc-list-group">
+            <nav class="mdc-list mdc-drawer-menu">
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../../index-2.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">account_balance</i>
+                  Dashboard
+                </a>
+              </div>
+              <div class="mdc-drawer-title">
+                APPS
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="email-sub-menu">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">mail</i>
+                  Email
+                  <i class="mdc-drawer-arrow material-icons-outlined">chevron_right</i>
+                </a>
+                <div class="mdc-expansion-panel" id="email-sub-menu">
+                  <nav class="mdc-list mdc-drawer-submenu">
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../email/inbox.html">
+                        Inbox
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../email/message.html">
+                        Message
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../apps/kanban-board.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">tablet</i>
+                  Kanban Board
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../apps/tickets.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">sd_card</i>
+                  Tickets
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../apps/todo.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">event</i>
+                  Todo list
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../apps/calendar.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">calendar_today</i>
+                  Calendar
+                </a>
+              </div>
+              <div class="mdc-drawer-title">
+                UI ELEMENTS
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../ui-features/buttons.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">settings_overscan</i>
+                  Buttons
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../ui-features/typography.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">text_fields</i>
+                  Typography
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../ui-features/icons.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">insert_emoticon</i>
+                  Icons
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../ui-features/tabs.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon"
+                    aria-hidden="true">tab</i>
+                  Tabs
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../ui-features/progress-bar.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">filter_list</i>
+                  Progress
+                </a>
+              </div>
+
+
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="advanced-ui-sub-menu">
+                  <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                  Advanced UI
+                  <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+                </a>
+                <div class="mdc-expansion-panel" id="advanced-ui-sub-menu">
+                  <nav class="mdc-list mdc-drawer-submenu">
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../ui-features/dragula.html">
+                        Dragula
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../ui-features/clipboard.html">
+                        Clipboard
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../ui-features/carousel.html">
+                        Carousel
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../ui-features/context-menu.html">
+                        Context menu
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../ui-features/slider.html">
+                        Slider
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../ui-features/loaders.html">
+                        Loaders
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+
+              
+              <div class="mdc-drawer-title">
+                FORMS & TABLES
+              </div>
+              
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="forms">
+                <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                Forms
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="forms">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../forms/basic-forms.html">
+                      Basic Form
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="../forms/advanced-forms.html">
+                      Advanced Form
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../ui-features/dialog.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon"
+                    aria-hidden="true">picture_in_picture</i>
+                  Dialog
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link"
+                  href="../ui-features/notifications.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">add_alert</i>
+                  Notification
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../tables/basic-tables.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+                  Tables
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../tables/data-tables.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">table_chart</i>
+                  Data Table
+                </a>
+              </div>
+              <div class="mdc-drawer-title">
+                CHARTS
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../charts/chartjs.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon">insert_chart</i>
+                  ChartJs
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../charts/flot.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">donut_small</i>
+                  Flot
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../charts/sparkline.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon">bar_chart</i>
+                  Sparkline
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../charts/c3.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon">pie_chart</i>
+                  C3
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../charts/chartist.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon">multiline_chart</i>
+                  Chartist
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../charts/justGage.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon">bubble_chart</i>
+                  JustGage
+                </a>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="../charts/morris.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon">scatter_plot</i>
+                  Morris
+                </a>
+              </div>
+
+              <div class="mdc-drawer-title">
+                MAPS
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="maps-sub-menu">
+                  <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">place</i>
+                  Maps
+                  <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+                </a>
+                <div class="mdc-expansion-panel" id="maps-sub-menu">
+                  <nav class="mdc-list mdc-drawer-submenu">
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../maps/mapael.html">
+                        Mapael
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="../maps/vector-map.html">
+                        Vector Map
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="mdc-drawer-title">
+                PAGES
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="blank-page.html">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>
+                  Blank Page
+                </a>
+              </div>
+
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="error-sub-menu">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">error_outline</i>
+                  Error Pages
+                  <i class="mdc-drawer-arrow material-icons-outlined">chevron_right</i>
+                </a>
+                <div class="mdc-expansion-panel" id="error-sub-menu">
+                  <nav class="mdc-list mdc-drawer-submenu">
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="403.html">
+                        403
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="404.html">
+                        404
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="500.html">
+                        500
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="505.html">
+                        505
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="user-sub-menu">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true" >power_settings_new</i>
+                  User Pages
+                  <i class="mdc-drawer-arrow material-icons-outlined">chevron_right</i>
+                </a>
+                <div class="mdc-expansion-panel" id="user-sub-menu">
+                  <nav class="mdc-list mdc-drawer-submenu">
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="login.html">
+                        Login
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="login-2.html">
+                        Login-2
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="register.html">
+                        Register
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="register-2.html">
+                        Register-2
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="lock-screen.html">
+                        Lockscreen
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="general-sub-menu">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">table_chart</i>
+                  General Pages
+                  <i class="mdc-drawer-arrow material-icons-outlined">chevron_right</i>
+                </a>
+                <div class="mdc-expansion-panel" id="general-sub-menu">
+                  <nav class="mdc-list mdc-drawer-submenu">
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="profile.html">
+                        Profile
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="news-grid.html">
+                        News Grid
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="faq.html">
+                        Faq
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="faq-2.html">
+                        Faq 2
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="timeline.html">
+                        Timeline
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="search-results.html">
+                        Search Results
+                      </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                      <a class="mdc-drawer-link" href="portfolio.html">
+                        Portfolio
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+
+
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ecommerce-submenu">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+                E-commerce
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="ecommerce-submenu">
+                <nav class="mdc-list mdc-drawer-submenu">
+
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="invoice.html">
+                      Invoice
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="orders.html">
+                      Orders
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pricing-table.html">
+                      Pricing Table
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+
+              <div class="mdc-drawer-title">
+                Misc
+              </div>
+              <div class="mdc-list-item mdc-drawer-item">
+                <a class="mdc-drawer-link" href="http://www.urbanui.com/caroline/documentation/documentation.html" target="_blank">
+                  <i class="material-icons-outlined mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>
+                  Documentation
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </aside>
+
+      <!-- partial -->
+      <div class="main-wrapper mdc-drawer-app-content">
+        <!-- partial:../../partials/_navbar.html -->
+        <header class="mdc-top-app-bar">
+          <div class="mdc-top-app-bar__row">
+            <div
+              class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start mdc-top-app-bar__section-left">
+              <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">
+                menu
+              </button>
+              <div class="menu-button-container d-none d-lg-block">
+                <button class="mdc-button mdc-menu-button active">
+                  Overview <i class="material-icons">arrow_drop_down</i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1" id="overview-menu">
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Back
+                      </h6>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Forward
+                      </h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-button-container d-none d-lg-block">
+                <button class="mdc-button mdc-menu-button">
+                  Apps <i class="material-icons">arrow_drop_down</i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1" id="app-menu">
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-rientation="vertical" >
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Calendar
+                      </h6>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Email
+                      </h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-button-container d-none d-lg-block">
+                <button class="mdc-button mdc-menu-button">
+                  Projects <i class="material-icons">arrow_drop_down</i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1" id="project-menu">
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Current Projects
+                      </h6>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Past Projects
+                      </h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-button-container d-none d-xl-block">
+                <button class="mdc-button mdc-menu-button">
+                  Pages <i class="material-icons">arrow_drop_down</i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1" id="page-menu">
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Bookings
+                      </h6>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Testing
+                      </h6>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <h6 class="item-subject font-weight-normal">
+                        Read
+                      </h6>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-top-app-bar__section-right">
+              <div class="menu-button-container d-none d-md-block">
+                <button class="mdc-button mdc-menu-button">
+                  <i class="material-icons-outlined">
+                    assignment_returned
+                  </i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon-only">
+                        <i class="material-icons-outlined text-primary">
+                          lock
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          Lock screen
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon-only">
+                        <i class="material-icons-outlined text-primary">
+                          power_settings_new
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">Logout</h6>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-button-container">
+                <button class="mdc-button mdc-menu-button">
+                  <i class="material-icons-outlined text-primary">
+                    check_circle
+                  </i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon-only">
+                        <i class="material-icons-outlined text-primary">
+                          info
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          Settings
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon-only">
+                        <i class="material-icons-outlined text-primary">
+                          vertical_align_bottom
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">Update</h6>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-button-container d-none d-md-block">
+                <button class="mdc-button mdc-menu-button">
+                  <i class="material-icons-outlined text-primary">
+                    print
+                  </i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                  <h6 class="title d-flex align-items-center">
+                    <i class="material-icons-outlined text-primary mr-2">
+                      email
+                    </i>
+                    Messages
+                  </h6>
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail">
+                        <img src="../../../assets/images/faces/face4.jpg" alt="user" />
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          Mark send you a message
+                        </h6>
+                        <small class="text-muted"> 1 Minutes ago </small>
+                      </div>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail">
+                        <img src="../../../assets/images/faces/face2.jpg" alt="user" />
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          Cregh send you a message
+                        </h6>
+                        <small class="text-muted"> 15 Minutes ago </small>
+                      </div>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail">
+                        <img src="../../../assets/images/faces/face3.jpg" alt="user" />
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          Profile picture updated
+                        </h6>
+                        <small class="text-muted"> 18 Minutes ago </small>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-button-container menu-profile">
+                <button class="mdc-button mdc-menu-button">
+                  <span class="d-flex align-items-center">
+                    <span class="figure">
+                      <img src="../../../assets/images/faces/face1.jpg" alt="user" clas="user" />
+                    </span>
+                    <span class="user-name">Christian Russell</span><i class="material-icons">arrow_drop_down</i>
+                  </span>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon-only">
+                        <i class="material-icons-outlined text-primary">
+                          supervisor_account
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          Edit profile
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon-only">
+                        <i class="material-icons-outlined text-primary">
+                          settings
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">Logout</h6>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-button-container pl-2">
+                <button class="mdc-button mdc-menu-button">
+                  <i class="material-icons-outlined text-primary">
+                    notifications
+                  </i>
+                </button>
+                <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                  <h6 class="title d-flex align-items-center">
+                    <i class="material-icons-outlined text-primary">
+                      notifications
+                    </i>
+                    Notifications
+                  </h6>
+                  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon">
+                        <i class="material-icons-outlined text-info">
+                          email
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          You received a new message
+                        </h6>
+                        <small class="text-muted"> 6 min ago </small>
+                      </div>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon">
+                        <i class="material-icons-outlined text-success">
+                          supervised_user_circle
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          New user registered
+                        </h6>
+                        <small class="text-muted"> 15 min ago </small>
+                      </div>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon">
+                        <i class="material-icons-outlined text-warning">
+                          error_outline
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          System Alert
+                        </h6>
+                        <small class="text-muted"> 2 days ago </small>
+                      </div>
+                    </li>
+                    <li class="mdc-list-item" role="menuitem">
+                      <div class="item-thumbnail item-thumbnail-icon">
+                        <i class="material-icons-outlined text-danger">
+                          system_update_alt
+                        </i>
+                      </div>
+                      <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="item-subject font-weight-normal">
+                          You have a new update
+                        </h6>
+                        <small class="text-muted"> 3 days ago </small>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- partial -->
+        <div class="page-wrapper mdc-toolbar-fixed-adjust">
+          <main class="content-wrapper">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                        <div class="mdc-card">
+                            <div class="mdc-layout-grid__inner portfolio-grid">
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/1.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Photography</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/2.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Lifestyle</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/3.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Tech Geeks</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/4.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Explore World</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/5.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Travel</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/6.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Colors</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/7.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Through Nature</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/8.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>World</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/9.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Cultures</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/10.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Habits</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/11.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Being yourself</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/12.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Nature</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/13.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Routines</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/14.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Life</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3 mdc-layout-grid__cell mdc-layout-grid__cell--span-3-tablet">
+                                    <figure class="mdc-effect-text-in"> <img src="../../../assets/images/samples/300x300/15.jpg" alt="image" />
+                                        <figcaption>
+                                            <h4>Vision</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+          <!-- partial:../../partials/_footer.html -->
+          <footer>
+            <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                  <span class="tx-14"
+                    >Copyright © 2020
+                    <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All
+                    rights reserved.</span>
+                </div>
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop d-flex justify-content-end">
+                  <div class="d-flex align-items-center">
+                    <a href="#">Documentation</a>
+                    <span class="vertical-divider"></span>
+                    <a href="#">FAQ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          <!-- partial -->
+        </div>
+      </div>
+    </div>
+    <!-- plugins:js -->
+    <script src="../../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../../../assets/js/material.js"></script>
+    <script src="../../../assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <!-- End custom js for this page-->
+  </body>
+
+<!-- Mirrored from demo.bootstrapdash.com/caroline/template/demo_1/pages/samples/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Jul 2024 03:20:23 GMT -->
+</html>
